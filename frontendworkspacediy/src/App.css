@@ -36,3 +36,159 @@
     transform: rotate(360deg);
   }
 }
+
+.div-hd {
+  position: relative;
+  padding: 10px;
+  background-color: aqua;
+}
+.img-logo {
+  height: 20px;
+  width: 20px;
+  margin-left: 20px;
+}
+/* rightmost tab  */
+.sub2-hd {
+  float: right;
+  margin-right: 20px;
+  margin-top: -25px;
+}
+.sb22-hd {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 80px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.sub2-hd:hover .sb22-hd {
+  display: block;
+}
+/* leftmost tab  */
+.sp-hd3, .sp-hd4, .sp-hd5, .sp-hd6 {
+  margin-left: 10px;
+}
+.div-src {
+  position: relative;
+  width: 350px;
+  height: 100%;
+  margin: -21px 0 0 490px;
+}
+.inp-src {
+  width: 350px;
+  height: 20px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 40px;
+  padding: 3px;
+}
+.img-src {
+  position: absolute;
+  height: 15px;
+  top: 1.5px;
+  right: 3px;
+}
+.sub3-hd {
+  margin-left: 380px;
+  margin-top: -21px;
+}
+.sb23-hd {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 80px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.sub3-hd:hover .sb23-hd {
+  display: block;
+}
+/* list w/o bullets  */
+ul.ul2-hd, ul.ul3-hd {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 10px;
+}
+.sp-hd3:hover, .sp-hd2:hover, .sub-hd:hover .ssp-hd {
+  background-color: blue;
+}
+/* Home First Component --  */
+.main-hfs {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+}
+.div-hfs {
+  background-color: red;
+}
+.sub-hfs2 h2, .sub-hfs2 p, .sub-hfs22 h2, .sub-hfs22 p, .sub-hfs23 h2, .sub-hfs23 p {
+  margin: 0;
+}
+.sub-hfs2 {
+  color: yellow;
+}
+.sub-hfs2 img, .sub-hfs22 img, .sub-hfs23 img {
+  width: 600px;
+  height: 220px;
+}
+.div-hfs3 {
+  background-color: blue;
+}
+.sub-hfs22 {
+  color: lightgreen;
+  float: right;
+  margin-right: 0;
+}
+.sub-hfs23 {
+  color: aquamarine;
+}
+/* --  */
+/* Home Second Component --  */
+.main-hsc {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+}
+.div-hsc {
+  background-color: brown;
+}
+.sub-hsc2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
+.sub2-hsc2 {
+  text-align: center;
+}
+.sub3-hsc2 {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub3-hsc2 p {
+  font-size: 30px;
+}
+.sub-hsc22 {
+  text-align: center;
+}
+.sub-hsc22 p {
+  padding: 20px;
+}
+.div-hsc3 {
+  background-color: burlywood;
+}
+/* --  */
+/* Footer --  */
+.main-ftr {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  background-color: black;
+}
+.div-ftr2 {
+  background-color: red;
+  color: azure;
+  text-align: center;
+}
+/* --  */
