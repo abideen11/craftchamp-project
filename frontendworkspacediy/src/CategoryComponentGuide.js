@@ -19,9 +19,10 @@ export default class CategoryComponentGuide extends React.Component {
                     <h2 className="cgd-h22">Instructions</h2>
                     {this.props.addGuide.instructions.map((i) => 
                         <div className="i-txt">{i.order}
-                            <p className="i2-txt">{i.text}</p> 
+                            <p className="i2-txt">{i.text}</p>
                         </div>
                     )}
+                    <br />
                     <br />
                     <br />
                 </div>

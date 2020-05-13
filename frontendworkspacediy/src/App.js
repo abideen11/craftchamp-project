@@ -183,6 +183,20 @@ class App extends React.Component {
   ]
           }
         })
+      case "How to Install a Muffler":
+        return this.setState({
+          addGuide: {
+            title: guide.title,
+            category: guide.category,
+            imgUrl: guide.img_url,
+            materials: ["Car Muffler","Metric Socket","Flathead Screwdriver","Ratchet","Penetrating Oil","Grinder","Gloves","Floor Jack"],
+            instructions: [{order: "1.", text: "Jack Up Your Car: Use your floor jack to raise up your car. Ensure the car is in park, and you have set the emergency brakes."},
+          {order: "2.", text: "Locate Old Muffler Flange: Spray penetrating fluid on the bolts and let them soak for at least one hour."},
+        {order: "3.", text: "Remove the Muffler Bolts and Clamps: This is the most tricky part of this job. Due to high heat, the exhaust bolts can be very hard to remove. Always use the correct size of the socket wrench. Do not use an adjustable wrench on the exhaust bolts, you will most likely strip the bolts. It may be wise to have a spare exhaust clamp and bolts in case your old clamp gets damaged. Remove the muffler exhaust hangers. These are easy to remove as they typically slide right out. Often some force is required. Once you remove the exhaust clamps and bolts you should be able to slide out the old exhaust. Typically you can pull the old muffler towards the rear of the car. In some cases, you may be able to simply drop the muffler down. If the old pipes are limiting you from removing the old exhaust you can cut the pipes as long as you have new replacement pipe ready. Some stock mufflers are welded where your new muffler may have clamps and joints, in such case you will have to cut the old pipe in order to remove the muffler. Always use eye protection and gloves if you have to cut out the old exhaust pipe. Be careful so that you don't get injured. Also, pay attention to any wires or other parts that are near the exhaust. You don't want to accidentally cut anything else."},
+      {order: "4.", text: "Install New Exhaust: Line up the old muffler next to the new one. Make sure you have the orientation of the pipes correctly. Some joints can be tightened before you install the muffler into the car. If you are not sure, don't make any connections yet. Start installing the new muffler on the car. You may also consider upgrading the muffler at this point. Some car owners choose to delete the muffler and go with a straight pipe instead but that may be illegal in some states. Use the rubber hangers to secure the muffler in place. Next, you need to make the pipe connections from the new muffler to the flange on the exhaust system. Continue by putting together the exhaust pipes. Make sure to install the gaskets when applicable. Some exhaust pipes use an o-ring to at the joints. Connect the new pipe to the old pipe. Make sure to install the gaskets that came with the muffler. It is common for aftermarket exhaust systems to come with a sleeve. You will use the sleeve to join the two new pipes together, typically at the middle. You should make this connection last if at all possible. The sleeve is four to five inches long and can be used to make any adjustments when the pipe is too short or the angle didn't match perfectly. It is recommended that you use muffler and tailpipe sealer at joints and connections. The exhaust sealant can help create tight connections. You don't want to have exhaust leaks at joints right after you install a new muffler."}
+    ]
+          }
+        })
     }
   }
   render() {
@@ -196,7 +210,6 @@ class App extends React.Component {
             <Route path="/artscrafts" render={() => <CategoryComponent guideCategory={this.state.guideCategory} />} />
             <Route path="/automotive" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
             <Route path="/beauty" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
-            {/* <Route path="/beauty" render={() => <CategoryComponent guideCategory={this.state.guideCategory} />} onAddGuide={this.onAddGuide} onClickedGuide={this.onClickedGuide} /> */}
             <Route path="/carpentry" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
             <Route path="/cleaningproducts" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
             <Route path="/electronics" render={() => <CategoryComponent guideCategory={this.state.guideCategory} />} />

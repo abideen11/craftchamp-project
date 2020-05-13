@@ -303,7 +303,8 @@ ul.i-mte {
 }
 .i-txt {
   position: relative;
-  padding: 90px;
+  padding: 120px;
+  margin-bottom: 100px;
 }
 .i2-txt {
   position: absolute;
