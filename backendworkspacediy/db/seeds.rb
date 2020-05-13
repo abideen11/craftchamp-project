@@ -11,7 +11,7 @@ Guide.destroy_all
 
 g1 = Guide.create(title: "How to Cut Your Own Hair", category: "Grooming", img_url: "https://media1.bonnegueule.fr/img/cms/fiches/405/_MG_0465.jpg")
 g2 = Guide.create(title: "How to Build a Step Stool", category: "Carpentry", img_url: "https://www.familyhandyman.com/wp-content/uploads/2018/07/P1055055.jpg")
-g3 = Guide.create(title: "How to Make Body Soap", category: "Hygienic Products", img_url: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/981/diysoap-6-cure-885-1515511021.jpg?resize=768:*")
+g3 = Guide.create(title: "How to Make Body Soap", category: "Hygiene Products", img_url: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/981/diysoap-6-cure-885-1515511021.jpg?resize=768:*")
 g4 = Guide.create(title: "How to Make Dishwashing Liquid", category: "Cleaning Products", img_url: "https://images.squarespace-cdn.com/content/5cabed640490796a7f3a1668/1555025499648-8EKL7ZOZ7KGN3NNEH1P1/dish+detergent.jpg?content-type=image%2Fjpeg")
 g5 = Guide.create(title: "How to Apply Makeup", category: "Beauty", img_url: "https://i.pinimg.com/236x/49/55/ac/4955ac694b069a25a68635383084ea50.jpg")
 g6 = Guide.create(title: "How to Trim Your Beard", category: "Grooming", img_url: "https://www.usa.philips.com/c-dam/b2c/male-grooming-experience-center/master/shaving/how-to/perfect-neckline-article-result.jpg")
