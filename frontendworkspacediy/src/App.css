@@ -246,16 +246,16 @@ ul.ul2-hd, ul.ul3-hd {
   font-size: 14px;
 }
 /* --  */
-/* Category Component --  */
-.main-bty, .main-ctg, .main-cgd {
+/* Category Component & Search Component --  */
+.main-bty, .main-ctg, .main-cgd, .main-src {
   display: flex;
   flex-wrap: wrap;
 }
-.div-ctg, .div-cgd {
+.div-ctg, .div-cgd, .div-src {
   flex: 10%;
   background-color: chocolate;
 }
-.div-ctg2, .div-cgd2 {
+.div-ctg2, .div-cgd2, .div-src2 {
   flex: 90;
   float: left;
   margin-left: 10px;
@@ -303,8 +303,11 @@ ul.i-mte {
 }
 .i-txt {
   position: relative;
-  padding: 120px;
-  margin-bottom: 100px;
+  /* padding: 120px; */
+  padding-left: 40px;
+  padding-right: 40px;
+  /* padding-bottom: 40px; */
+  margin-bottom: 220px;
 }
 .i2-txt {
   position: absolute;
@@ -321,7 +324,7 @@ ul.i-mte {
 
 
 /* Temproary, Error, LogIn, Register --  */
-.main-err, .main-tmp, .main-log, .main-rgs {
+.main-err, .main-tmp, .main-log, .main-rgs, .div-args {
   text-align: center;
   height: 460px;
 }

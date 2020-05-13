@@ -2,7 +2,6 @@ import React from 'react';
 
 export default class CategoryComponentGuide extends React.Component {
     render() {
-        console.log(this.props.addGuide)
         return(
             <div className="main-cgd">
                 <div className="div-cgd"></div>

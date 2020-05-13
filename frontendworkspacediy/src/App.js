@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
@@ -13,33 +12,13 @@ import LogIn from './LogIn';
 import Register from './Register';
 import CategoryComponent from './CategoryComponent';
 import CategoryComponentGuide from './CategoryComponentGuide';
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+import Search from './Search';
 
 class App extends React.Component {
   state = {
     guides: [],
-    guidesArray: [],
     guideCategory: [],
-    clickedGuide: [],
+    searchArray: [],
     addGuide: {
       title: null,
       category: null,
@@ -53,19 +32,13 @@ class App extends React.Component {
     .then(r => r.json())
     .then(data => {
       this.setState({
-        guides: data,
-        guidesArray: data
+        guides: data
       })
     })
   }
   onGuideCategory = (category) => {
     this.setState({
       guideCategory: this.state.guides.filter(i => i.category === category)
-    })
-  }
-  onClickedGuide = (guide) => {
-    this.setState({
-      clickedGuide: guide
     })
   }
   onAddGuide = (guide) => {
@@ -199,12 +172,24 @@ class App extends React.Component {
         })
     }
   }
+  onSearch = (e) => {
+    this.state.guides.map(
+      i => {
+        if(i.title.toLowerCase().includes(e.toLowerCase()) || i.category.toLowerCase().includes(e.toLowerCase())) {
+          this.setState({
+            searchArray: this.state.guides.filter(i => i.title.toLowerCase().includes(e.toLowerCase()) || i.category.toLowerCase().includes(e.toLowerCase()))
+          })
+        }
+      }
+    )
+  }
   render() {
     console.log(this.state.guides)
+    console.log(this.state.searchArray)
     return(
       <BrowserRouter>
         <div>
-          <Route render={() => <Header onGuideCategory={this.onGuideCategory} />} />
+          <Route render={() => <Header onGuideCategory={this.onGuideCategory} onSearch={this.onSearch} />} />
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/artscrafts" render={() => <CategoryComponent guideCategory={this.state.guideCategory} />} />
@@ -215,9 +200,10 @@ class App extends React.Component {
             <Route path="/electronics" render={() => <CategoryComponent guideCategory={this.state.guideCategory} />} />
             <Route path="/grooming" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
             <Route path="/hygieneproducts" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
-            <Route path="/guide" render={() => <CategoryComponentGuide clickedGuide={this.state.clickedGuide} addGuide={this.state.addGuide} />} />
+            <Route path="/guide" render={() => <CategoryComponentGuide addGuide={this.state.addGuide} />} />
             <Route path="/login" component={LogIn} />
             <Route path="/register" component={Register} />
+            <Route path="/search" render={() => <Search searchArray={this.state.searchArray} onAddGuide={this.onAddGuide} />} />
             <Route path="/temporary" component={Temporary} />
             <Route path="*" component={Error} />
           </Switch>
