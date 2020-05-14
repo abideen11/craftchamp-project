@@ -4,9 +4,6 @@ import { faUserCircle, faCaretDown, faSearch } from '@fortawesome/free-solid-svg
 import { Link } from 'react-router-dom';
 
 export default class Header extends React.Component {
-    onLogOut = () => {
-        localStorage.clear()
-    }
     render() {
         return(
             <div className="div-hd">
@@ -36,7 +33,7 @@ export default class Header extends React.Component {
                     <div className="sb22-hd">
                         <ul className="ul2-hd">
                             {   localStorage.token ?
-                                <li onClick={this.onLogOut}><Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Log Out</Link></li>
+                                <li onClick={() => localStorage.clear()}><Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Log Out</Link></li>
                                 :
                                 <li><Link to="/login" style={{ color: 'inherit', textDecoration: 'none' }}>Log In</Link></li>
                             }

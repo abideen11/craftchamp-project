@@ -8,6 +8,7 @@ export default class HomeSecond extends React.Component {
             <div className="main-hsc">
                 <div className="div-hsc"></div>
                 <div className="div-hsc2">
+                    <br />
                     <div className="sub-hsc2">
                         <div className="sub2-hsc2">
                             <div className="sub3-hsc2">
@@ -36,7 +37,7 @@ export default class HomeSecond extends React.Component {
                         </div>
                     </div>
                     <div className="sub-hsc22">
-                        <h1>DIYers Wanted</h1>
+                        <h1>DIYers Wanted!</h1>
                         <br />
                         <p>No matter what the project entails. Please let CraftChamp be
                             a guide or inspiration. Everybody was terrible when they first 

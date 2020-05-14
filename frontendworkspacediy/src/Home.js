@@ -6,9 +6,7 @@ export default class Home extends React.Component {
     render() {
         return(
             <div className="div-hme">
-                <br />
                 <HomeFirst />
-                <br />
                 <HomeSecond />
             </div>
         )

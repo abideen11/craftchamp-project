@@ -1,48 +1,9 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .div-hd {
   z-index: 1000;
   position: sticky;
   top: 0;
   padding: 10px;
-  background-color: aqua;
+  background-color: white;
 }
 .img-logo {
   height: 20px;
@@ -74,7 +35,7 @@
   position: relative;
   width: 350px;
   height: 100%;
-  margin: -21px 0 0 490px;
+  margin: -21px 0 0 570px;
 }
 .inp-src {
   width: 350px;
@@ -99,11 +60,16 @@
   position: absolute;
   background-color: white;
   min-width: 80px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   z-index: 1;
 }
 .sub3-hd:hover .sb23-hd {
   display: block;
+}
+.ul3-hd li:hover {
+  background-color: gold;
+}
+.ul2-hd li:hover {
+  background-color: gold;
 }
 /* list w/o bullets  */
 ul.ul2-hd, ul.ul3-hd {
@@ -116,26 +82,36 @@ ul.ul2-hd, ul.ul3-hd {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
 }
-.div-hfs {
+/* .div-hfs {
   background-color: red;
-}
+} */
 .sub-hfs2 h2, .sub-hfs2 p, .sub-hfs22 h2, .sub-hfs22 p, .sub-hfs23 h2, .sub-hfs23 p {
   margin: 0;
 }
 .sub-hfs2 {
   color: yellow;
 }
-.sub-hfs2 img, .sub-hfs22 img, .sub-hfs23 img {
+.sub-hfs2 img {
   width: 600px;
   height: 220px;
 }
-.div-hfs3 {
-  background-color: blue;
+.sub-hfs22 img {
+  width: 450px;
+  height: 250px;
+  float: right;
+  margin-right: 0;
 }
+/* .div-hfs3 {
+  background-color: blue;
+} */
 .sub-hfs22 {
   color: lightgreen;
   float: right;
   margin-right: 0;
+}
+.sub-hfs23 img {
+  width: 550px;
+  height: 250px;
 }
 .sub-hfs23 {
   color: aquamarine;
@@ -146,9 +122,9 @@ ul.ul2-hd, ul.ul3-hd {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
 }
-.div-hsc {
+/* .div-hsc {
   background-color: brown;
-}
+} */
 .sub-hsc2 {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -165,6 +141,8 @@ ul.ul2-hd, ul.ul3-hd {
   display: flex;
   justify-content: center;
   align-items: center;
+  float: left;
+  margin-left: 40px;
 }
 .sub3-hsc2 p {
   font-size: 30px;
@@ -175,9 +153,9 @@ ul.ul2-hd, ul.ul3-hd {
 .sub-hsc22 p {
   padding: 20px;
 }
-.div-hsc3 {
+/* .div-hsc3 {
   background-color: burlywood;
-}
+} */
 /* --  */
 /* Footer --  */
 .main-ftr {
@@ -186,8 +164,8 @@ ul.ul2-hd, ul.ul3-hd {
   background-color: black;
 }
 .div-ftr2 {
-  background-color: red;
-  color: azure;
+  background-color: black;
+  color: gray;
 }
 .ftr2-col {
   float: left;
@@ -253,7 +231,7 @@ ul.ul2-hd, ul.ul3-hd {
 }
 .div-ctg, .div-cgd, .div-src {
   flex: 10%;
-  background-color: chocolate;
+  /* background-color: chocolate; */
 }
 .div-ctg2, .div-cgd2, .div-src2 {
   flex: 90;
@@ -303,10 +281,8 @@ ul.i-mte {
 }
 .i-txt {
   position: relative;
-  /* padding: 120px; */
   padding-left: 40px;
   padding-right: 40px;
-  /* padding-bottom: 40px; */
   margin-bottom: 220px;
 }
 .i2-txt {
@@ -315,14 +291,6 @@ ul.i-mte {
   margin-left: 30px;
 }
 /* --  */
-
-
-
-
-
-
-
-
 /* Temproary, Error, LogIn, Register --  */
 .main-err, .main-tmp, .main-log, .main-rgs, .div-args {
   text-align: center;
