@@ -25,6 +25,7 @@ export default class CategoryComponentGuide extends React.Component {
                     <br />
                     <br />
                 </div>
+                <div className="div-cgd3"></div>
             </div>
         )
     }

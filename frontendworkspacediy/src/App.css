@@ -81,6 +81,7 @@ ul.ul2-hd, ul.ul3-hd {
 .main-hfs {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
+  background-color: #99ffbb;
 }
 /* .div-hfs {
   background-color: red;
@@ -89,7 +90,7 @@ ul.ul2-hd, ul.ul3-hd {
   margin: 0;
 }
 .sub-hfs2 {
-  color: yellow;
+  color: white;
 }
 .sub-hfs2 img {
   width: 600px;
@@ -105,7 +106,7 @@ ul.ul2-hd, ul.ul3-hd {
   background-color: blue;
 } */
 .sub-hfs22 {
-  color: lightgreen;
+  color: white;
   float: right;
   margin-right: 0;
 }
@@ -114,7 +115,7 @@ ul.ul2-hd, ul.ul3-hd {
   height: 250px;
 }
 .sub-hfs23 {
-  color: aquamarine;
+  color: white;
 }
 /* --  */
 /* Home Second Component --  */
@@ -260,6 +261,10 @@ ul.ul2-hd, ul.ul3-hd {
   background-color: blue;
   color: white;
 }
+.main-cgd {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+}
 .cgd-h2 {
   padding-left: 20px;
 }
@@ -283,7 +288,7 @@ ul.i-mte {
   position: relative;
   padding-left: 40px;
   padding-right: 40px;
-  margin-bottom: 220px;
+  margin-bottom: 260px;
 }
 .i2-txt {
   position: absolute;
