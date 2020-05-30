@@ -11,6 +11,7 @@ export default class Search extends React.Component {
                 <div className="div-ctg2">
                     {this.props.searchArray.map(srch => <SearchResult srch={srch} onAddGuide={this.props.onAddGuide} />)}
                 </div>
+                <div className="div-ctg3"></div>
             </div>
             :
             <div className="main-ctg">

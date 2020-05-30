@@ -226,18 +226,12 @@ ul.ul2-hd, ul.ul3-hd {
 }
 /* --  */
 /* Category Component & Search Component --  */
-.main-bty, .main-ctg, .main-cgd, .main-src {
-  display: flex;
-  flex-wrap: wrap;
+.div-ctg, .div-ctg3, .div-cgd, .div-cgd3 {
+  background-color: #99ffbb;
 }
-.div-ctg, .div-cgd, .div-src {
-  flex: 10%;
-  /* background-color: chocolate; */
-}
-.div-ctg2, .div-cgd2, .div-src2 {
-  flex: 90;
+.div-ctg2 {
   float: left;
-  margin-left: 10px;
+  margin-left: 40px;
 }
 .div-actg {
   text-align: center;
@@ -261,7 +255,7 @@ ul.ul2-hd, ul.ul3-hd {
   background-color: blue;
   color: white;
 }
-.main-cgd {
+.main-cgd, .main-ctg {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
 }

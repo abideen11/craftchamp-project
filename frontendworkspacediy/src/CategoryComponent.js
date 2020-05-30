@@ -10,6 +10,7 @@ export default class CategoryComponent extends React.Component {
                 <div className="div-ctg2">
                     {this.props.guideCategory.map(c => <CategoryComponentCard c={c} onAddGuide={this.props.onAddGuide} />)}
                 </div>
+                <div className="div-ctg3"></div>
             </div>
             :
             <div className="main-ctg">
@@ -17,6 +18,7 @@ export default class CategoryComponent extends React.Component {
                 <div className="div-actg">
                     <h1>Please Check Back Later After This Page Has Been Updated</h1>
                 </div>
+                <div className="div-ctg3"></div>
             </div>
         )
     }

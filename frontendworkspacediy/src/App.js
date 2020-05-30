@@ -184,8 +184,6 @@ class App extends React.Component {
     )
   }
   render() {
-    console.log(this.state.guides)
-    console.log(this.state.searchArray)
     return(
       <BrowserRouter>
         <div>
