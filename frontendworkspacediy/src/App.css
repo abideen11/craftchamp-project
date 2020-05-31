@@ -2,13 +2,17 @@
   z-index: 1000;
   position: sticky;
   top: 0;
-  padding: 10px;
+  padding: 15px;
   background-color: white;
 }
 .img-logo {
-  height: 20px;
-  width: 20px;
+  height: 35px;
+  width: 35px;
+  float: left;
   margin-left: 20px;
+  /* margin-top: 0; */
+  /* background-color: gold; */
+  /* color: gold; */
 }
 /* rightmost tab  */
 .sub2-hd {
@@ -29,7 +33,7 @@
 }
 /* leftmost tab  */
 .sp-hd3, .sp-hd4, .sp-hd5, .sp-hd6 {
-  margin-left: 10px;
+  margin-left: 7px;
 }
 .div-src {
   position: relative;
@@ -66,10 +70,10 @@
   display: block;
 }
 .ul3-hd li:hover {
-  background-color: gold;
+  background-color: #ffff00;
 }
 .ul2-hd li:hover {
-  background-color: gold;
+  background-color: #ffff00;
 }
 /* list w/o bullets  */
 ul.ul2-hd, ul.ul3-hd {
@@ -81,7 +85,7 @@ ul.ul2-hd, ul.ul3-hd {
 .main-hfs {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
-  background-color: #99ffbb;
+  background-color: #ffff00;
 }
 /* .div-hfs {
   background-color: red;
@@ -138,7 +142,7 @@ ul.ul2-hd, ul.ul3-hd {
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background-color: orange;
+  background-color: #ffff00;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,7 +192,7 @@ ul.ul2-hd, ul.ul3-hd {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: #ffff00;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -200,7 +204,7 @@ ul.ul2-hd, ul.ul3-hd {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: #ffff00;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,7 +231,7 @@ ul.ul2-hd, ul.ul3-hd {
 /* --  */
 /* Category Component & Search Component --  */
 .div-ctg, .div-ctg3, .div-cgd, .div-cgd3 {
-  background-color: #99ffbb;
+  background-color: #ffff00;
 }
 .div-ctg2 {
   float: left;

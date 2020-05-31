@@ -3,12 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle, faCaretDown, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
+import untitledcolor from './untitled x2bckgrdcolor.png'
+
 export default class Header extends React.Component {
     render() {
         return(
             <div className="div-hd">
                 <span className="sp-hd1"></span>
-                <Link to="/"><img className="img-logo" src="https://edit.co.uk/uploads/2016/12/Image-1-Alternatives-to-stock-photography-Thinkstock.jpg" alt="plc" /></Link>
+                <Link to="/"><img className="img-logo" src={untitledcolor} alt="plc" /></Link>
                 <span className="sp-hd3" onClick={() => this.props.onGuideCategory("Arts & Crafts")}><Link to="/artscrafts" style={{ color: 'inherit', textDecoration: 'none' }}>Arts & Crafts</Link></span>
                 <span className="sp-hd4" onClick={() => this.props.onGuideCategory("Automotive")}><Link to="/automotive" style={{ color: 'inherit', textDecoration: 'none' }}>Automotive</Link></span>
                 <span className="sp-hd5" onClick={() => this.props.onGuideCategory("Beauty")}><Link to="/beauty" style={{ color: 'inherit', textDecoration: 'none' }}>Beauty</Link></span>
