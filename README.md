@@ -2,7 +2,7 @@
 
 Disclaimer: The CraftChamp name and IP are intended for educational purposes only.
 
-CraftChamp is a website that has guides for numerous tasks. Every task has a guide that list all the materials and instructions needed to complete the task. Categories for the tasks are Arts & Crafts, Automotive, Beauty, Carpentry, Cleaning Products, Electronics, Grooming and Hygiene Products. 
+CraftChamp is a website that has guides for numerous tasks. Every task has a guide that list the materials and instructions needed to complete the task. Categories of the tasks are Arts & Crafts, Automotive, Beauty, Carpentry, Cleaning Products, Electronics, Grooming and Hygiene Products. 
 
 Below this line are instructions on cloning the repository.
 
@@ -28,4 +28,4 @@ Add another terminal
 
 -Run server: $npm start
 
-Probably get a message reading, "Would you like to run the app on another port instead", enter y to run another port
+Probably get a message reading, "Would you like to run the app on another port instead", enter y to run on another port
