@@ -28,4 +28,4 @@ Add another terminal
 
 -Run server: $npm start
 
-Probably get a message reading, "Would you like to run the app on another port instead", enter y to run on another port
+Probably get a message reading, "Would you like to run the app on another port instead?", enter y to run on another port
