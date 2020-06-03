@@ -8,7 +8,7 @@ Below this line are instructions on cloning the repository.
 
 Setup:
 
-Note: Create a folder, inside the folder, create one directory for the backend and another for the frontend
+Note: Create a directory, inside the directory, create one directory for the backend and another for the frontend
 
 Fork and clone into the folder that has the backend and frontend directories
 
