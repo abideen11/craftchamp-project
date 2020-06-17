@@ -10,9 +10,6 @@
   width: 35px;
   float: left;
   margin-left: 20px;
-  /* margin-top: 0; */
-  /* background-color: gold; */
-  /* color: gold; */
 }
 /* rightmost tab  */
 .sub2-hd {
@@ -87,14 +84,8 @@ ul.ul2-hd, ul.ul3-hd {
   grid-template-columns: 1fr 7fr 1fr;
   background-color: #ffff00;
 }
-/* .div-hfs {
-  background-color: red;
-} */
 .sub-hfs2 h2, .sub-hfs2 p, .sub-hfs22 h2, .sub-hfs22 p, .sub-hfs23 h2, .sub-hfs23 p {
   margin: 0;
-}
-.sub-hfs2 {
-  color: white;
 }
 .sub-hfs2 img {
   width: 600px;
@@ -106,11 +97,7 @@ ul.ul2-hd, ul.ul3-hd {
   float: right;
   margin-right: 0;
 }
-/* .div-hfs3 {
-  background-color: blue;
-} */
 .sub-hfs22 {
-  color: white;
   float: right;
   margin-right: 0;
 }
@@ -118,18 +105,11 @@ ul.ul2-hd, ul.ul3-hd {
   width: 550px;
   height: 250px;
 }
-.sub-hfs23 {
-  color: white;
-}
-/* --  */
 /* Home Second Component --  */
 .main-hsc {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
 }
-/* .div-hsc {
-  background-color: brown;
-} */
 .sub-hsc2 {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -158,10 +138,6 @@ ul.ul2-hd, ul.ul3-hd {
 .sub-hsc22 p {
   padding: 20px;
 }
-/* .div-hsc3 {
-  background-color: burlywood;
-} */
-/* --  */
 /* Footer --  */
 .main-ftr {
   display: grid;
@@ -188,7 +164,7 @@ ul.ul2-hd, ul.ul3-hd {
 .ftr2-fa {
   float: left;
   margin-top: 30px;
-  margin-left: 190px;
+  margin-left: 270px;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -243,7 +219,7 @@ ul.ul2-hd, ul.ul3-hd {
 }
 .sub2-ctg {
   width: 300px;
-  height: 400px;
+  height: 440px;
   border: 1px solid black;
   text-align: center;
 }

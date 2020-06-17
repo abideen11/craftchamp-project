@@ -17,4 +17,5 @@ g5 = Guide.create(title: "How to Apply Makeup", category: "Beauty", img_url: "ht
 g6 = Guide.create(title: "How to Trim Your Beard", category: "Grooming", img_url: "https://www.usa.philips.com/c-dam/b2c/male-grooming-experience-center/master/shaving/how-to/perfect-neckline-article-result.jpg")
 g7 = Guide.create(title: "How to Apply Mascara", category: "Beauty", img_url: "https://bloximages.newyork1.vip.townnews.com/news-journal.com/content/tncms/assets/v3/editorial/4/f8/4f869eec-44c0-11e8-aa65-2302eddcfb3e/5ada242acc664.image.jpg?resize=750%2C420")
 g8 = Guide.create(title: "How to Install a Muffler", category: "Automotive", img_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQd250LWHXCFb5zDp-fk-4nmjndB-ptHxHeIgKzDmAtH7KiXEaE&usqp=CAU")
+g9 = Guide.create(title: "Make a Portable Solar Phone Charger", category: "Electronics", img_url: "https://cdn.instructables.com/FLD/3UOH/HGH70CUZ/FLD3UOHHGH70CUZ.LARGE.jpg?auto=webp&frame=1&width=320")
 

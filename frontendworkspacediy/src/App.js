@@ -92,7 +92,7 @@ class App extends React.Component {
           {order: "2.", text: "Emulsify: Melt coconut oil over low heat until no solids remain. Add olive oil. Using a stainless steel thermometer, check the temperature of the oils. Compare against the temperature of the lye solution, and adjust until they're within a degree or two, between 100 110 degrees. Pour the lye solution into the oils, and use a hand or stick blender to emulsify until the mixture begins to thicken and the texture resembles pudding. This process will take 5-10 minutes with a stick blender. Once the soap has thickened, stir in the coffee grounds and oat bran with the stainless steel spoon or spatula."},
         {order: "3.", text: "Pour & Rest: Slowly pour the mixture into a soap mould. Lift and tap the mold against the counter a few times to release air bubbles. Cover with parchment paper, and then wrap the entire mold with a towel to insulate it."},
       {order: "4.", text: "Remove From Mould: After 24-48 hours, remove the towel, and take the soap out of the mold. If you used a large single mold rather than individual molds, let the soap loaf sit for another day to harden further before cutting into bars. Any sharp knife will work here. A vegetable peeler can be used to smooth sides, if desired."},
-    {order: "5.", text: "Cure: After the soap is cut into bars, you'll need to let them cure in a cool and well-ventilated area for four weeks. This allows the soap to finish saponification and for all the excess water to evaporate. Before you know it you will be able to enjoy your soap"}
+    {order: "5.", text: "Cure: After the soap is cut into bars, you'll need to let them cure in a cool and well-ventilated area for four weeks. This allows the soap to finish saponification and for all the excess water to evaporate. Before you know it you will be able to enjoy your soap."}
   ]
           }
         })
@@ -170,6 +170,22 @@ class App extends React.Component {
     ]
           }
         })
+    case "Make a Portable Solar Phone Charger":
+      return this.setState({
+        addGuide: {
+          title: guide.title,
+          category: guide.category,
+          imgUrl: guide.img_url,
+          materials: ["6V Mini Solar Panel","12V USB Charger Circuit","Smartphone","Smartphone Charger Cable","Flexible & Foldable Plastic Card","Hot Glue Gun","30W Soldering Iron","Leatherman Multitool"],
+          instructions: [{order: "1.", text: "Disassemble 12V High Power USB Charger."},
+        {order: "2.", text: "Cut the wires, short enough to be mounted on the solar panel."},
+      {order: "3.", text: "Solder the charger circuit to the solar panel."},
+    {order: "4.", text: "Use a hot glue gun to mount the charger to the solar panel."},
+  {order: "5.", text: "Verify the USB port is not protruding and the circuit should not touch any other leads on the panel."},
+{order: "6.", text: "Hot glue the plastic card to the non-conducting side of the solar panel."}
+]
+        }
+      })
     }
   }
   onSearch = (e) => {
@@ -195,7 +211,7 @@ class App extends React.Component {
             <Route path="/beauty" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
             <Route path="/carpentry" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
             <Route path="/cleaningproducts" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
-            <Route path="/electronics" render={() => <CategoryComponent guideCategory={this.state.guideCategory} />} />
+            <Route path="/electronics" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
             <Route path="/grooming" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
             <Route path="/hygieneproducts" render={() => <CategoryComponent guideCategory={this.state.guideCategory} onAddGuide={this.onAddGuide} />} />
             <Route path="/guide" render={() => <CategoryComponentGuide addGuide={this.state.addGuide} />} />
