@@ -45,7 +45,7 @@ export default class Footer extends React.Component {
                         <hr />
                     </div>
                     <div className="ftr2-rft">
-                        <p><Link to="/temporary" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy Policy</Link> <Link to="/temporary" style={{ color: 'inherit', textDecoration: 'none' }}>Terms of Use</Link> <Link to="/temporary" style={{ color: 'inherit', textDecoration: 'none' }}>Ad Choices</Link></p>
+                        <p><Link to="/privacypolicy" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy Policy</Link> <Link to="/temporary" style={{ color: 'inherit', textDecoration: 'none' }}>Terms of Use</Link> <Link to="/temporary" style={{ color: 'inherit', textDecoration: 'none' }}>Ad Choices</Link></p>
                     </div>
                     <div className="ftr2-lft">
                         <p><FontAwesomeIcon icon={faCopyright} /> 2020 CraftChamp. All Rights Reserved.</p>

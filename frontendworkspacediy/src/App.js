@@ -13,6 +13,7 @@ import Register from './Register';
 import CategoryComponent from './CategoryComponent';
 import CategoryComponentGuide from './CategoryComponentGuide';
 import Search from './Search';
+import PrivacyPolicy from './PrivacyPolicy';
 
 class App extends React.Component {
   state = {
@@ -218,6 +219,7 @@ class App extends React.Component {
             <Route path="/login" component={LogIn} />
             <Route path="/register" component={Register} />
             <Route path="/search" render={() => <Search searchArray={this.state.searchArray} onAddGuide={this.onAddGuide} />} />
+            <Route path="/privacypolicy" component={PrivacyPolicy} />
             <Route path="/temporary" component={Temporary} />
             <Route path="*" component={Error} />
           </Switch>
