@@ -14,6 +14,7 @@ import CategoryComponent from './CategoryComponent';
 import CategoryComponentGuide from './CategoryComponentGuide';
 import Search from './Search';
 import PrivacyPolicy from './PrivacyPolicy';
+import Terms from './Terms';
 
 class App extends React.Component {
   state = {
@@ -220,6 +221,7 @@ class App extends React.Component {
             <Route path="/register" component={Register} />
             <Route path="/search" render={() => <Search searchArray={this.state.searchArray} onAddGuide={this.onAddGuide} />} />
             <Route path="/privacypolicy" component={PrivacyPolicy} />
+            <Route path="/termsandconditions" component={Terms} />
             <Route path="/temporary" component={Temporary} />
             <Route path="*" component={Error} />
           </Switch>

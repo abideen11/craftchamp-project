@@ -270,12 +270,12 @@ ul.i-mte {
   margin-left: 30px;
 }
 /* --  */
-/* Privacy Policy */
-.main-ppo {
+/* Privacy Policy, Terms & Conditions */
+.main-ppo, .main-tac {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
 }
-.div-ppo2 h1 {
+.div-ppo2 h1, .div-tac2 h1 {
   text-align: center;
 }
 /* -- */
