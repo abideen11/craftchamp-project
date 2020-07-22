@@ -15,7 +15,7 @@
 .sub2-hd {
   float: right;
   margin-right: 20px;
-  margin-top: -25px;
+  margin-top: -20px;
 }
 .sb22-hd {
   display: none;
@@ -34,9 +34,11 @@
 }
 .div-src {
   position: relative;
+  float: left;
+  margin-top: -21px;
+  margin-left: 440px;
   width: 350px;
   height: 100%;
-  margin: -21px 0 0 570px;
 }
 .inp-src {
   width: 350px;
@@ -164,7 +166,7 @@ ul.ul2-hd, ul.ul3-hd {
 .ftr2-fa {
   float: left;
   margin-top: 30px;
-  margin-left: 240px;
+  margin-left: 260px;
   height: 40px;
   width: 40px;
   border-radius: 50%;
