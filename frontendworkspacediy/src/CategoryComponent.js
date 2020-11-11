@@ -7,7 +7,7 @@ export default class CategoryComponent extends React.Component {
             this.props.guideCategory.length > 0 ?
             <div className="main-ctg">
                 <div className="div-ctg"></div>
-                <div className="div-ctg2">
+                <div className="div-ctg2" style={{display: 'flex'}}>
                     {this.props.guideCategory.map(c => <CategoryComponentCard c={c} onAddGuide={this.props.onAddGuide} />)}
                 </div>
                 <div className="div-ctg3"></div>

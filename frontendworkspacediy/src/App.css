@@ -212,8 +212,8 @@ ul.ul2-hd, ul.ul3-hd {
   background-color: #ffff00;
 }
 .div-ctg2 {
-  float: left;
-  margin-left: 40px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .div-actg {
   text-align: center;
